@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>AmazeBalls JukeBox</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+        <script type="text/javascript" src = "jquery.js"></script>
+        <script type="text/javascript" src = "player.js"></script>
+        <script type="text/javascript" src = "jukebox.js"></script>
+        </script>
+        <style media="screen">
+          .flex-container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 960px;
+            margin: auto;
+          }
+          #song-list li {
+            list-style: none;
+          }
+          .player {
+            margin: auto;
+          }
+          .title-wrapper {
+            height:80px;
+            padding: 22px;
+            margin-top: 22px;
+          }
+        </style>
+
+
+    </head>
+    <body>
+      <div class="flex-container">
+        <div class="player" id="player">
+
+          <div class="title-wrapper"><h1 id="song-title">JUKE BOX BABY</h1></div>
+          <label for="title">Title</label><input id="title" type="text" name="title" value="">
+          <label for="song">Song</label> <input id="song" type="text" name="title" value="">
+          <br>
+          <button id="list-button" type="button" name="list">add a song</button>
+          <button id="play-button" type="button" name="play">Play</button>
+          <div class="queue">
+            <h3 id="queue"></h3>
+            <ul id="song-list">
+
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </body>
+</html>
